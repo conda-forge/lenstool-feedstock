@@ -1,11 +1,11 @@
-About lenstool
-==============
+About lenstool-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/lenstool-feedstock/blob/main/LICENSE.txt)
 
 Home: https://projets.lam.fr/projects/lenstool
 
 Package license: GPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/lenstool-feedstock/blob/main/LICENSE.txt)
 
 Summary: A gravitational lensing software for modeling mass distribution of galaxies and clusters (strong and weak regime).
 
