@@ -26,3 +26,6 @@ target_platform:
 - linux-64
 wcslib:
 - '8'
+zip_keys:
+- - python
+  - channel_sources
