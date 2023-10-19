@@ -27,6 +27,7 @@ requirements:
     - wcslib
     - gsl
     - libblas  # [linux]
+    - astropy
   run:
     - python
     - numpy
