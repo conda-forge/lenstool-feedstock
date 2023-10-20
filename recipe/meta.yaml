@@ -1,5 +1,5 @@
 {% set name = "lenstool" %}
-{% set version = "8.1.0" %}
+{% set version = "8.1.1" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://git-cral.univ-lyon1.fr/{{ name }}/{{ name }}/-/archive/{{ version }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c4cb1b42063830e03d5c27c29a2fde11fbf8c18d7ece6e4395b857a662614cc3
+  sha256: f72cde38064a7bf63c5f3de0a3e3a2d28bec599f1486089714a6cbcc2c234a4a
 
 build:
   number: 0
@@ -35,6 +35,7 @@ requirements:
     - wcslib
     - gsl
     - libblas  # [linux]
+    - astropy
 
 test:
   imports:
