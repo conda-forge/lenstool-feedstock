@@ -1,5 +1,5 @@
 {% set name = "lenstool" %}
-{% set version = "8.1.1" %}
+{% set version = "8.2.1" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://git-cral.univ-lyon1.fr/{{ name }}/{{ name }}/-/archive/{{ version }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a9ec310b2358a29867db73256685143c5af40290175bbf67f5be474463a21f37
+  sha256: 2e917fdab78e3d20b379a2ee361b057be0ae5fb37107e8b6e685011b4f5ba281
 
 build:
   number: 0
