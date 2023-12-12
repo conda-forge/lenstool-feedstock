@@ -38,7 +38,7 @@ requirements:
     - astropy
     - scipy
     - emcee
-    - matplotlib
+    - matplotlib-base
     - corner
 
 test:
