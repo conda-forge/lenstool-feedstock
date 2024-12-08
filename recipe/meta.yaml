@@ -10,7 +10,7 @@ source:
   sha256: e8abd2cef74ef9d5cf405627e0534ae8a009cc66c4488a9977d6b768ceab1ffc
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
 
 requirements:
@@ -30,7 +30,7 @@ requirements:
     - wcslib
     - gsl
     - libblas  # [linux]
-    - astropy
+    - astropy-base
   run:
     - python
     - numpy
@@ -38,7 +38,7 @@ requirements:
     - wcslib
     - gsl
     - libblas  # [linux]
-    - astropy
+    - astropy-base
     - scipy
     - emcee
     - matplotlib-base
