@@ -10,7 +10,7 @@ source:
   sha256: e8abd2cef74ef9d5cf405627e0534ae8a009cc66c4488a9977d6b768ceab1ffc
 
 build:
-  number: 1
+  number: 2
   skip: true  # [win]
 
 requirements:
@@ -20,6 +20,7 @@ requirements:
     - libtool  # [not win]
     - gnuconfig  # [unix]
     - {{ compiler('c') }}  # [not win]
+    - {{ stdlib("c") }}    # [not win]
     - make  # [not win]
   host:
     - llvm-openmp  # [osx]
