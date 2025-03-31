@@ -4,7 +4,7 @@ cp $BUILD_PREFIX/share/gnuconfig/config.* ./autoconf
 
 set -ex
 
-./configure --prefix=$PREFIX --with-cfitsio-prefix=$PREFIX --with-wcslib-include-path=$PREFIX/include/wcslib --with-wcslib-lib-path=$PREFIX/lib --with-gsl-prefix=$PREFIX || { cat config.log ; exit 1 ; }
+./configure --prefix=$PREFIX || { cat config.log ; exit 1 ; }
 
 make
 make install
