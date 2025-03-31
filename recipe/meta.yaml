@@ -21,6 +21,7 @@ requirements:
     - gnuconfig  # [unix]
     - {{ compiler('c') }}  # [not win]
     - make  # [not win]
+    - pkg-config
   host:
     - llvm-openmp  # [osx]
     - libgomp      # [linux]
