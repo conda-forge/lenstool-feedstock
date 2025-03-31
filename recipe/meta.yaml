@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://git-cral.univ-lyon1.fr/{{ name }}/{{ name }}/-/archive/{{ version }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e8abd2cef74ef9d5cf405627e0534ae8a009cc66c4488a9977d6b768ceab1ffc
+  sha256: 56f1182cbddc57b5d46a03e1a125cad2b062f19094dd921533e3c58f6c42ccd6
 
 build:
   number: 1
