@@ -23,6 +23,7 @@ requirements:
     - make  # [not win]
     - pkg-config
     - autoconf
+    - automake
   host:
     - llvm-openmp  # [osx]
     - libgomp      # [linux]
