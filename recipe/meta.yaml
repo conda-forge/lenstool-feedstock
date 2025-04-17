@@ -22,6 +22,7 @@ requirements:
     - {{ compiler('c') }}  # [not win]
     - make  # [not win]
     - pkg-config
+    - autoconf
   host:
     - llvm-openmp  # [osx]
     - libgomp      # [linux]
