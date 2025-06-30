@@ -240,4 +240,5 @@ Feedstock Maintainers
 =====================
 
 * [@ejullo](https://github.com/ejullo/)
+* [@njzifjoiez](https://github.com/njzifjoiez/)
 
