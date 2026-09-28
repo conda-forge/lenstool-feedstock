@@ -47,6 +47,8 @@ requirements:
     - gsl
     - libblas  # [linux]
     - astropy-base
+    - scipy
+    - emcee
   run:
     - python
     - numpy
