@@ -1,5 +1,6 @@
 {% set name = "lenstool" %}
-{% set version = "8.12.1" %}
+{% set version = "8.15.4" %}
+
 
 package:
   name: "{{ name|lower }}"
@@ -7,11 +8,10 @@ package:
 
 source:
   url: https://git-cral.univ-lyon1.fr/{{ name }}/{{ name }}/-/archive/{{ version }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 93fd1ef806ad711c7cb685241c00ac0600e089c4516fc146e36dc1497ca7bc0a
+  sha256: ce3bb00ad2b328e3e85ab7a403f6bdd64c3f3425c01f4e16b43289643bdd656a
 
 build:
   number: 0
-  skip: true  # [win]
 
 requirements:
   build:
@@ -19,12 +19,22 @@ requirements:
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - libtool  # [not win]
     - gnuconfig  # [unix]
-    - {{ compiler('c') }}  # [not win]
-    - {{ stdlib("c") }}    # [not win]
+    - {{ compiler('c') }}
+    - {{ stdlib("c") }}
+    - autotools_clang_conda  # [win]
     - make  # [not win]
+    - m2-bash  # [win]
+    - m2-coreutils  # [win]
+    - m2-diffutils  # [win]
+    - m2-findutils  # [win]
+    - m2-gawk  # [win]
+    - m2-grep  # [win]
+    - m2-make  # [win]
+    - m2-sed  # [win]
+    - m2-which  # [win]
     - pkg-config
-    - autoconf
-    - automake
+    - autoconf  # [not win]
+    - automake  # [not win]
   host:
     - llvm-openmp  # [osx]
     - libgomp      # [linux]
@@ -32,15 +42,19 @@ requirements:
     - pip
     - setuptools
     - cfitsio
-    - wcslib
+    - pthreads-win32  # [win]
+    - wcslib  # [not win]
     - gsl
     - libblas  # [linux]
     - astropy-base
+    - scipy
+    - emcee
   run:
     - python
     - numpy
     - cfitsio
-    - wcslib
+    - pthreads-win32  # [win]
+    - wcslib  # [not win]
     - gsl
     - libblas  # [linux]
     - astropy-base
