@@ -53,6 +53,7 @@ requirements:
     - python
     - numpy
     - cfitsio
+    - pthreads-win32  # [win]
     - wcslib  # [not win]
     - gsl
     - libblas  # [linux]
