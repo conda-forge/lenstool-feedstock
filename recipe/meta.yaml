@@ -11,7 +11,7 @@ source:
   sha256: ce3bb00ad2b328e3e85ab7a403f6bdd64c3f3425c01f4e16b43289643bdd656a
 
 build:
-  number: 0
+  number: 1
 
 requirements:
   build:
