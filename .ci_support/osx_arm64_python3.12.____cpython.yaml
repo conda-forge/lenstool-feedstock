@@ -32,3 +32,6 @@ target_platform:
 - osx-arm64
 wcslib:
 - '8'
+zip_keys:
+- - python
+  - channel_sources
