@@ -5,7 +5,7 @@ c_compiler_version:
 c_stdlib:
 - vs
 cfitsio:
-- 4.6.4
+- 4.7.0
 channel_sources:
 - conda-forge
 channel_targets:
